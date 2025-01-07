@@ -1,0 +1,349 @@
+/* Globales Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Allgemeines Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 80px; /* Abstand für fixierte Navigation */
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    color: #0055a5;
+}
+
+/* Header */
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo-container h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header .logo-container p {
+    font-size: 1.2rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #004b99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Damit das Menü immer oben bleibt */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Formulargestaltung */
+.form-section, .survey-section, .login-container, .register-container {
+    margin: 50px auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Eingabefelder und Formular-Layout */
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="number"], input[type="text"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="number"]:focus, input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #004b99;
+}
+
+/* Ergebnistabelle */
+.table-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+table td {
+    background-color: #fff;
+}
+
+table tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+/* Login Section */
+.login-section, .register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f9fafc;
+}
+
+.login-container, .register-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2, .register-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container label, .register-container label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.login-container input, .register-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.login-container input:focus, .register-container input:focus {
+    border-color: #0066cc;
+}
+
+.login-container button, .register-container button {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover, .register-container button:hover {
+    background-color: #004b99;
+}
+
+.additional-links {
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.additional-links a {
+    color: #0066cc;
+}
+
+.additional-links a:hover {
+    color: #0055a5;
+}
+
+/* Umfrage-Bereich */
+.survey-section {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.survey-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.survey-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.survey-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.survey-section label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.survey-section select, .survey-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.survey-section textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.survey-section button {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.survey-section button:hover {
+    background-color: #004b99;
+}
+
+/* Container für die Buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Verteilt die Buttons gleichmäßig */
+    margin-top: 20px;
+}
+
+.button-container button {
+    background-color: #0066cc;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: #004b99;
+}
+
+.button-container button[type="button"] {
+    background-color: #cccccc;
+    color: #333;
+}
+
+.button-container button[type="button"]:hover {
+    background-color: #999999;
+}
+
+/* Responsives Layout */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .login-container, .register-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+}

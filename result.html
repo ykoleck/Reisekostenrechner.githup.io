@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisekosten Ergebnisse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Reisekosten Ergebnisse</h1>
+            <p>Hier sind die detaillierten Berechnungen für deine Reise.</p>
+        </div>
+    </header>
+
+    <div class="results">
+        <h2>Gesamtkosten der Reise</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kostenart</th>
+                    <th>Gesamt (€)</th>
+                    <th>Pro Person (€)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Spritkosten</td>
+                    <td id="spritkostengesamt"></td>
+                    <td id="spritkostenpro"></td>
+                </tr>
+                <tr>
+                    <td>Unterkunftskosten</td>
+                    <td id="unterkunftgesamt"></td>
+                    <td id="unterkunftpro"></td>
+                </tr>
+                <tr>
+                    <td><strong>Gesamtkosten</strong></td>
+                    <td id="gesamtkosten"></td>
+                    <td id="kostenpro"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </div>
+    
+
+        <div class="notes">
+            <h3>Wichtige Hinweise:</h3>
+            <ul>
+                <li>Die Benzinkosten basieren auf der eingegebenen Fahrstrecke und den aktuellen Benzinpreisen.</li>
+                <li>Die Unterkunftskosten wurden auf alle Reisenden aufgeteilt, um den fairen Anteil zu berechnen.</li>
+                <li>Falls du mit mehreren Fahrzeugen reist, kannst du den Benzinpreis pro Fahrzeug ebenfalls berechnen.</li>
+            </ul>
+        </div>
+
+        <button onclick="window.history.back()">Zurück zur Eingabe</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Reisekosten Rechner. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="result.js"></script>
+</body>
+</html>
+
+
+<header>
+    <div class="logo-container">
+        <h1>Reisekosten Rechner</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über</a></li>
+            <li><a href="tips.html">Tipps</a></li>
+            <li><a href="survey.html">Umfrage</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+<button onclick="window.location.href='survey.html'">Jetzt zur Umfrage</button>
+<li><a href="survey.html">Umfrage</a></li>
+
+    
+
+
+    <!-- Hier kommen die berechneten Ergebnisse -->
+
+    <!-- Buttons -->
+    <div class="button-container">
+        <button type="button" onclick="window.location.href='index.html'">Zurück zur Eingabe</button>
+        <button type="button" onclick="window.location.href='survey.html'">Zur Umfrage</button>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umfrage - Reisekosten Rechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <h1>Reisekosten Rechner</h1>
+            <p>Dein Feedback ist uns wichtig!</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über</a></li>
+            <li><a href="tips.html">Tipps</a></li>
+            <li><a href="survey.html">Umfrage</a></li> <!-- Umfrage-Link -->
+        </ul>
+    </nav>
+
+    <section id="survey" class="survey-section">
+        <h2>Wie gefällt dir die Seite?</h2>
+        <p>Bitte nimm dir einen Moment Zeit, um uns dein Feedback zu geben!</p>
+        
+        <form id="surveyForm">
+            <label for="rating">Wie würdest du die Seite insgesamt bewerten? (1 = sehr schlecht, 5 = sehr gut)</label>
+            <select id="rating" required>
+                <option value="">Bitte wähle eine Bewertung</option>
+                <option value="1">1 - Sehr schlecht</option>
+                <option value="2">2 - Schlecht</option>
+                <option value="3">3 - Durchschnittlich</option>
+                <option value="4">4 - Gut</option>
+                <option value="5">5 - Sehr gut</option>
+            </select>
+
+            <label for="feedback">Was hat dir gefallen? (optional)</label>
+            <textarea id="feedback" placeholder="Dein Feedback" rows="4"></textarea>
+
+            <label for="suggestions">Hast du Verbesserungsvorschläge? (optional)</label>
+            <textarea id="suggestions" placeholder="Deine Vorschläge" rows="4"></textarea>
+
+            <button type="submit">Absenden</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Reisekosten Rechner. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

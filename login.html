@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background-color: #00c853;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #008c3a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen auf unserer Plattform!</h1>
+        <p>Entfessle dein volles Potenzial. Deine Reise beginnt hier – lass uns loslegen!</p>
+        <button id="start-button">Starte Jetzt</button>
+    </div>
+
+    <script>
+        document.getElementById("start-button").addEventListener("click", function() {
+            // Weiterleitung zur index.html
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>

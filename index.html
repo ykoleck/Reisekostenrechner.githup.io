@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisekosten Rechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>Reisekosten Rechner</h1>
+            <p>Berechne die Reisekosten für Benzin, Unterkunft und teile sie unter den Reisenden auf.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#form">Start</a></li>
+                <li><a href="#about">Über</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#tips">Tipps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="form" class="form-section">
+        <div class="form-container">
+            <h2>Reisedaten eingeben</h2>
+            <form id="reiseForm">
+                <label for="km">Fahrstrecke (in km):</label>
+                <input type="number" id="km" placeholder="Kilometer" required>
+    
+                <label for="verbrauch">Verbrauch (Liter/100 km):</label>
+                <input type="number" id="verbrauch" placeholder="z. B. 7" required>
+    
+                <label for="spritpreis">Spritpreis pro Liter (€):</label>
+                <input type="number" id="spritpreis" placeholder="z. B. 1.80" step="0.01" required>
+    
+                <label for="unterkunft">Unterkunftskosten (€):</label>
+                <input type="number" id="unterkunft" placeholder="Unterkunftskosten" required>
+    
+                <label for="reisende">Anzahl der Reisenden:</label>
+                <input type="number" id="reisende" placeholder="Anzahl der Reisenden" required>
+    
+                <div class="submit-btn-container">
+                    <button type="submit" id="berechnenBtn">Berechnen</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+
+    <section id="about" class="about-section">
+        <h2>Über diese App</h2>
+        <p>Die Reisekosten-Rechner App hilft dir, die Fahrtkosten und Unterkunftskosten zu berechnen, um diese auf die Reisenden gerecht aufzuteilen.</p>
+    </section>
+
+    <section id="tips" class="tips-section">
+        <h2>Tipps</h2>
+        <ul>
+            <li>Vergiss nicht, die Kosten pro Person korrekt zu berechnen.</li>
+            <li>Plane auch die Zwischenstopps und extra Kosten wie Verpflegung mit ein.</li>
+            <li>Nutze die Reisekosten App für eine genaue und faire Kostenaufteilung.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Kontakt</h2>
+        <p>Hast du Fragen? Kontaktiere uns unter: <a href="mailto:support@reisekostenapp.com">support@reisekostenapp.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Reisekosten Rechner. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="about.html">Über</a></li>
+        <li><a href="tips.html">Tipps</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="logo-container">
+        <h1>Reisekosten Rechner</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="about.html">Über</a></li>
+            <li><a href="tips.html">Tipps</a></li>
+        </ul>
+    </nav>
+</header>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisekosten Rechner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+            // Ergebnisse in der Tabelle anzeigen
+            document.getElementById('result-km').textContent = km;
+            document.getElementById('result-benzinkosten').textContent = benzinkosten.toFixed(2);
+            document.getElementById('result-unterkunft').textContent = unterkunft.toFixed(2);
+            document.getElementById('result-reisende').textContent = reisende;
+            document.getElementById('result-kosten').textContent = kostenProPerson.toFixed(2);
+
+            // Die Ergebnistabelle anzeigen
+            document.getElementById('results').style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
+<li><a href="survey.html">Umfrage</a></li>
+
+
+<script>
+    // Überprüfen, ob der Benutzer eingeloggt ist
+    if (localStorage.getItem('loggedIn') !== 'true') {
+        window.location.href = 'login.html'; // Wenn nicht, zurück zur Login-Seite
+    }
+</script>              
+
+<li><a href="survey.html">Umfrage</a></li>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
